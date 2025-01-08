@@ -69,3 +69,5 @@ php artisan make:livewire Tasks
 php artisan make:model
 
  php artisan make:livewire tasks.tasks-index
+
+ php artisan livewire:form TaskForm
