@@ -1,5 +1,6 @@
 <!-- div a esquerda com a lista de tarefas -->
 <div class="w-full mr-4 esq md:w-1/2">
+    <h1>Total de tarefas: <span>{{ $count }}</span></h1>
     @foreach ($tasks as $task)
         <a href="#">
             <div class="p-4 mb-4 bg-gray-200 rounded-lg shadow w-7/8 hover:bg-gray-300">
