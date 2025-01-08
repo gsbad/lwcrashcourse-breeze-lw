@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Tasks\TasksIndex;
+
+# Rota para a página de tarefas
+Route::middleware(['auth'])->group(function () {
+    Route::get('/tasks', TasksIndex::class)->name('tasks.index');
+});
 
 Route::view('/', 'welcome');
 
