@@ -10,8 +10,7 @@ class TasksIndex extends Component
 {
     public function render()
     {
-        return view('livewire.tasks.tasks-index', [
-            'tasks' => auth()->user()->tasks()->latest()->get()
-        ])->layout('layouts.app');
+        // Renderiza o componente
+        return view('livewire.tasks.tasks-index')->layout('layouts.app');
     }
 }

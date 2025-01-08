@@ -22,4 +22,9 @@
             </div>
         </a>
     @endforeach
+    @if ($tasks->hasPages())
+        <div class="p-2 mt-2 mb-12">
+            {{ $tasks->links() }}
+        </div>
+    @endif
 </div>
